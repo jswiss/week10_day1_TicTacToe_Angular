@@ -9,23 +9,12 @@
 </head>
 <body ng-app="tictactoeApp">
 	
-	<table>
-		<tr id="row-1">
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr id="row-2">
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr id="row-3">
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-	</table>
+<div class="container" ng-controller="BoardController">
+	<div><button class="button-class" ng-repeat="cell in board[0]">{{ cell.value }}</button></div>
+	<div><button class="button-class" ng-repeat="cell in board[0]">{{ cell.value }}</button></div>
+	<div><button class="button-class" ng-repeat="cell in board[0]">{{ cell.value }}</button></div>
+</div>
+
 	
 </body>
 </html>
